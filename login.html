@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Log In</title>
+        <style>
+            body {
+                background-color: rgb(223, 223, 223);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .container {
+                background-color: white;
+                width: 50%;
+                padding: 30px;
+                border-radius: 20px;
+                margin: auto;
+            }
+            .button .button {
+                background-color: rgb(16, 103, 175);
+                color: white;
+                padding: 15px;
+                border-radius: 20px;
+                border: none;
+                width: 10%;
+            }
+            .button .button:hover {
+                background-color: rgb(48, 121, 180);
+                cursor: pointer;
+            }
+            form legend {
+                text-align: center;
+                font-size: 40px;
+            }
+            form label {
+                font-size: 20px;
+            }
+            form input[type=text] {
+                padding: 15px;
+                border-radius: 10px;
+                border: 1px solid black;
+                width: 98%;
+                margin-top: 2%;
+                margin-bottom: 2%;
+            }
+            form input[type=password] {
+                padding: 15px;
+                border-radius: 10px;
+                border: 1px solid black;
+                width: 98%;
+                margin-top: 2%;
+                margin-bottom: 2%;
+            }
+            form input[type=submit] {
+                background-color: rgb(16, 103, 175);
+                color: white;
+                padding: 15px;
+                border-radius: 20px;
+                border: none;
+                width: 30%;
+                margin-left: 34%;
+                margin-top: 2%;
+            }
+            form input[type=submit]:hover {
+                background-color: rgb(48, 121, 180);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="patient.html" class="button">
+                <button class="button">Home</button>
+            </form>
+            <form action="login.php" method="post">
+                <legend>Log in</legend>
+                <label>Username</label>
+                <br>
+                <input type="text" name="username" required/>
+                <br>
+                <label>Password</label>
+                <br>
+                <input type="password" name="password" required/>
+                <br>
+                <p>No account? Sign up <a href="signup.html">here.</a></p>
+                <br>
+                <input type="submit" name="login" value="Login"/>
+            </form>
+        </div>
+    </body>
+</html>

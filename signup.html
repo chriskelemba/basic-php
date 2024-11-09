@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <style>
+            body {
+                background-color: rgb(223, 223, 223);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .container {
+                background-color: white;
+                width: 50%;
+                padding: 30px;
+                border-radius: 20px;
+                margin: auto;
+            }
+            .button .button {
+                background-color: rgb(16, 103, 175);
+                color: white;
+                padding: 15px;
+                border-radius: 20px;
+                border: none;
+                width: 10%;
+            }
+            .button .button:hover {
+                background-color: rgb(48, 121, 180);
+                cursor: pointer;
+            }
+            form legend {
+                text-align: center;
+                font-size: 40px;
+            }
+            form label {
+                font-size: 20px;
+            }
+            form input[type=text] {
+                padding: 15px;
+                border-radius: 10px;
+                border: 1px solid black;
+                width: 98%;
+                margin-top: 2%;
+                margin-bottom: 2%;
+            }
+            form input[type=password] {
+                padding: 15px;
+                border-radius: 10px;
+                border: 1px solid black;
+                width: 98%;
+                margin-top: 2%;
+                margin-bottom: 2%;
+            }
+            form select {
+                padding: 15px;
+                border-radius: 10px;
+                border: 1px solid black;
+                width: 101%;
+                margin-top: 2%;
+                margin-bottom: 2%;
+            }
+            form input[type=submit] {
+                background-color: rgb(16, 103, 175);
+                color: white;
+                padding: 15px;
+                border-radius: 20px;
+                border: none;
+                width: 30%;
+                margin-left: 34%;
+                margin-top: 2%;
+            }
+            form input[type=submit]:hover {
+                background-color: rgb(48, 121, 180);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="patient.html" class="button">
+                <button class="button">Home</button>
+            </form>
+            <form action="reg.php" method="post">
+                <legend>Sign Up</legend>
+                <label>Username</label>
+                <br>
+                <input type="text" name="username" required/>
+                <br>
+                <label>Password</label>
+                <br>
+                <input type="password" name="password" required/>
+                <br>
+                <label>Confirm Password</label>
+                <br>
+                <input type="password" name="confirm_password" required/>
+                <br>
+                <label>User-role</label>
+                <br>
+                <select name="userrole" required>
+                    <option value="doctor">Doctor</option>                       
+                    <option value="medic">Medic</option>
+                    <option value="pilot">Pilot</option>
+                    <option value="teacher">Teacher</option>
+                </select>
+                <br>
+                <input type="submit" name="reg" value="Register"/>
+            </form>
+        </div>
+    </body>
+</html>
