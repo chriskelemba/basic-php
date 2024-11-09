@@ -15,7 +15,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])) {
         $row = $result -> fetch_assoc();
         $hash = $row["password"];
 
-        //username: won password: 123
         if(password_verify($password, $hash)) {
             session_start();
             $_SESSION['username'] = $username;
